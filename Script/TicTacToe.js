@@ -31,8 +31,8 @@ var TicTacToe = {
 					TicTacToe.Turn[0] = 1;
 				}
 			}
+			TicTacToe.Check();
 		}
-		TicTacToe.Check();
 	},
 	Check : function() {
 		/**
