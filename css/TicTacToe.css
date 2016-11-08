@@ -14,7 +14,7 @@ td {
     border: 3px solid #000;
 }
 
-.chosen {
+td.chosen {
     width: 128;
     height: 81;
 }
@@ -39,5 +39,26 @@ td button:hover {
 }
 
 .menubtn {
-	/*Working on*/
+	display: inline-block;
+	padding: 5px 10px;
+	font-size: 24px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: #0080ff;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px #999;
+}
+
+.menubtn:hover {
+	background-color: #3399ff;
+}
+
+.menubtn:active {
+   background-color: #0066cc;
+   box-shadow: 0 5px #666;
+   transform: translateY(4px);
 }
