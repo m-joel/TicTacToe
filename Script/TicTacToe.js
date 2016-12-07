@@ -68,12 +68,29 @@ var TicTacToe = {
 				if(document.getElementById("TicTacToe_2").classList.contains(a+1)) {
 					if(document.getElementById("TicTacToe_3").classList.contains(a+1)) TicTacToe.Win(a+1);
 				}
+				if(document.getElementById("TicTacToe_4").classList.contains(a+1)) {
+				    if(document.getElementById("TicTacToe_7").classList.contains(a+1)) TicTacToe.Win(a+1);
+				}
+				if(document.getElementById("TicTacToe_5").classList.contains(a+1)) {
+				    if(document.getElementById("TicTacToe_9").classList.contains(a+1)) TicTacToe.Win(a+1);
+				}
 			}
 			if(document.getElementById("TicTacToe_9").classList.contains(a+1)) {
-				
+			    if(document.getElementById("TicTacToe_6").classList.contains(a+1)) {
+			        if(document.getElementById("TicTacToe_3").classList.contains(a+1)) TicTacToe.Win(a+1);
+			    }
+			    if(document.getElementById("TicTacToe_8").classList.contains(a+1)) {
+			        if(document.getElementById("TicTacToe_7").classList.contains(a+1)) TicTacToe.Win(a+1);
+			    }
+			    
 			}
 			if(document.getElementById("TicTacToe_5").classList.contains(a+1)) {
-				
+				if(document.getElementById("TicTacToe_4").classList.contains(a+1)) {
+				    if(document.getElementById("TicTacToe_6").classList.contains(a+1)) TicTacToe.Win(a+1);
+				}
+				if(document.getElementById("TicTacToe_2").classList.contains(a+1)) {
+				    if(document.getElementById("TicTacToe_8").classList.contains(a+1)) TicTacToe.Win(a+1);
+				}
 			}
 		}
 		/*tocheck = [0,0,0,
