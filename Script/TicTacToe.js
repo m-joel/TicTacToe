@@ -33,36 +33,6 @@ var TicTacToe = {
 		}
 	},
 	Check : function() {
-		/**
-		123,456,789,159,357,147,258,369
-		012;345;678;048;246;036;047;258
-		**/
-		/**
-		if p1 a case 1 
-			if p1 a case 2
-				if p1 a case 3
-					WIN
-			if p1 a case 4
-				if p1 a case 7
-					WIN
-			if p1 a case 5
-				if p1 a case 9
-					WIN
-		if p1 a case 9
-			if p1 a case 6
-				p1 a case 3
-					WIN
-			if p1 a case 8
-				if p1 a case 7
-					WIN
-		if p1 a case 5
-			if p1 a case 4
-				if p1 a case 6
-					WIN
-			if p1 a case 2
-				if p1 a case 8
-					WIN
-		**/
 		for(var a = 0; a < 1; a++) {
 			if(document.getElementById("TicTacToe_1").classList.contains(a+1)) {
 				if(document.getElementById("TicTacToe_2").classList.contains(a+1)) {
@@ -93,18 +63,6 @@ var TicTacToe = {
 				}
 			}
 		}
-		/*tocheck = [0,0,0,
-					   0,0,0,
-					   0,0,0]
-		for(var a = 0; a < 2; a++) {
-			//pour le nombre de joueurs 
-			pcheck = document.getElementsByClassName(a+1);
-			//obtenir les éléments contenantle numéro du joueur
-			for(var b=0; b < pcheck.length; b++) {
-			//pour le nombre d'éléments du joueur
-				tocheck[pcheck[b].id.replace("TicTacToe_", "")-1] = 1
-			}
-		}*/
 	},
 	Win : function(player) {
 		this.Variable[player+2]++ 
